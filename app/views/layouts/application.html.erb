@@ -3,6 +3,7 @@
 <head>
   <title>greenRHINO | Dev-Match Community</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Crushed" rel="stylesheet">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -33,7 +34,13 @@
   </nav> <!-- /main nav div -->
   
 <div class="container">
+  
+  <% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "alert alert-#{key}"%>
+  <% end %>
+  
   <%= yield %>
+  
 </div> 
 
 </body>

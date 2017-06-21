@@ -18,7 +18,26 @@
   background: #52c234;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
 
+.navbar-inverse .navbar-brand {
+  color: #ae4322;  
+  font-family: 'Crushed', cursive;
+  font-size: 2em;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #dbaf77;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #dbaf77;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #ae4322;
 }
 
 //--------------IDs------------------------------------
