@@ -7,8 +7,14 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     
     if @contact.save
+      name = params[:contact][:name]
+      email = params[:contact][:email]
+      body = params[:contact][:body]
+      
+      ContactMailer.contact_email(name, email,body).deliver
+      
       flash[:success] = "Message sent successfully!"
-    redirect_to new_contact_path 
+      redirect_to new_contact_path 
     else
       flash[:danger] = "An ERROR occured, your message has not been sent."
       redirect_to new_contact_path
