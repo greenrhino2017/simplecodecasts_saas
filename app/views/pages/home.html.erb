@@ -8,10 +8,13 @@
   <div class="col-md-6">
     <div class="well">
       <h2 class="text-center">Silver Membership</h2>
+      <br/>
       <h4 class="text-center">Sign up for a FREE Silver account to get basic access to the Developer Community.</h4>
-      <p></p>
+      <br/>
+      <p>The Silver Plan is free and will allow you to browse our lists of Developers and see 1 (one) example of thier work. It will not show contact information for you to contact the Developer.</p>
+      <br/>
       
-      <%= link_to "Sign up FREE!", new_user_registration_path, class: 'btn btn-primary btn-lg btn-block btn-1' %>
+      <%= link_to "Sign up FREE!", new_user_registration_path(plan: @silver_plan.id), class: 'btn btn-primary btn-lg btn-block btn-1' %>
       
     </div>
   </div>
@@ -19,10 +22,13 @@
   <div class="col-md-6">
     <div class="well">
       <h2 class="text-center">Gold Membership</h2>
+      <br/>
       <h4 class="text-center">Sign up for a Gold account for $9.99/month to access the complete community, including contact info & resumes'.</h4>
-      <p></p>
+      <br/>
+      <p>The Gold account is a very low cost way to browse our list of Developers, including thier contact information, full portfolio and resume'. The $9.99 is a resonable fee for all the info you recieve.</p>
+      <br/>
       
-      <%= link_to "Sign up for Gold!", new_user_registration_path, class: 'btn btn-success btn-lg btn-block btn-1' %>
+      <%= link_to "Sign up for Gold!", new_user_registration_path(plan: @gold_plan.id), class: 'btn btn-success btn-lg btn-block btn-1' %>
       
     </div>
   </div>
