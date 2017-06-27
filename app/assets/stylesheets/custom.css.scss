@@ -56,6 +56,20 @@
 
 .foot1 {
   background-color: #000;
+  min-height: 300px;
 }
 
+.socialLinks {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+
+.socialLinks:hover {
+  color: #f22900;
+}
+
+.heightAttr {
+  min-height: 600px;
+}
 //--------------IDs------------------------------------
