@@ -1,5 +1,6 @@
 class ProfilesController < ApplicationController
   before_action :authenticate_user!
+  before_action :only_current_user
   
   def new
     # form for each user to fill out thier own profile
@@ -37,5 +38,10 @@ class ProfilesController < ApplicationController
   private
     def profile_params
       params.require(:profile).permit(:first_name, :last_name, :nick_name, :job_title, :phone_number, :contact_email, :preferred_prog_lang, :description)
+    end
+    
+    def only_current_user
+      @user = User.find(  params[:user_id] )
+      redirect_to(root_url) unless @user == current_user
     end
 end
