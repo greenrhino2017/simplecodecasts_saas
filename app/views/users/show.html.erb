@@ -1,9 +1,12 @@
-<%= @user.profile.first_name %> <%= @user.profile.last_name %><br/>
-<%= @user.profile.nick_name %><br/>
-<%= @user.profile.job_title %><br/>
-<% if current_user.plan_id == 2 %>
-  <%= @user.profile.phone_number %><br/>
-  <%= @user.profile.contact_email %><br/>
-  <%= @user.profile.preferred_prog_lang %><br/>
-<% end %>
-<%= @user.profile.description %><br/>
+<div class="container mainContent">
+  <%= image_tag @user.profile.avatar.url %>
+  <%= @user.profile.first_name %> <%= @user.profile.last_name %><br/>
+  <%= @user.profile.nick_name %><br/>
+  <%= @user.profile.job_title %><br/>
+  <% if current_user.plan_id == 2 %>
+    <%= @user.profile.phone_number %><br/>
+    <%= @user.profile.contact_email %><br/>
+    <%= @user.profile.preferred_prog_lang %><br/>
+  <% end %>
+  <%= @user.profile.description %><br/>
+</div>
