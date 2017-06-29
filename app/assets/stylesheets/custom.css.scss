@@ -86,4 +86,55 @@
 .wellMin {
   min-height: 250px;
 }
+
+.jobBold {
+  font-weight: bold;
+}
+
+.job-title-icon {
+  margin-right: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #4fbb31;
+  color: #fff;
+}
+
+.job-descrip {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgba(79,187,49, .2);
+  color: #111;
+  margin: 0 20;
+  box-shadow: 8px 8px 10px #8e9299;
+  h3 {
+    margin-top: 0;
+    font-weight: bold;
+  }
+}
+
+.well.contact-info {
+    color: #111;
+    background-color: rgba(51,122,183, .2);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px #8e9299;
+    h3 {
+      display: inline-block;
+      margin-top: 0;
+      margin-right: 20px;
+      font-weight: bold;
+    }
+}
+
+.col-md-3.text-center.img1 {
+  box-shadow: 8px 8px 10px #8e9299;
+  border-radius: 50%;
+}
 //--------------IDs------------------------------------
+
+#profileName {
+  font-weight: bold;
+}

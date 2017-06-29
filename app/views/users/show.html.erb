@@ -1,12 +1,27 @@
 <div class="container mainContent">
-  <%= image_tag @user.profile.avatar.url %>
-  <%= @user.profile.first_name %> <%= @user.profile.last_name %><br/>
-  <%= @user.profile.nick_name %><br/>
-  <%= @user.profile.job_title %><br/>
-  <% if current_user.plan_id == 2 %>
-    <%= @user.profile.phone_number %><br/>
-    <%= @user.profile.contact_email %><br/>
-    <%= @user.profile.preferred_prog_lang %><br/>
-  <% end %>
-  <%= @user.profile.description %><br/>
+  <div class="row">
+    <div class="col-md-3 text-center img1">
+      <%= image_tag @user.profile.avatar.url %>
+    </div>
+    <div class="col-md-9">
+      <h1 id="profileName"><%= @user.profile.first_name %> <%= @user.profile.last_name %><br/></h1>
+      <h3><span class="job-title-icon"><%= job_title_icon %></span><%= @user.profile.job_title %><br/></h3>
+      <div class="well job-descrip">
+        <h3>Profile Description</h3>
+        <%= @user.profile.description %><br/>
+      </div>
+      
+      <div class="well contact-info">
+        <h3>Contact Info</32>
+        
+        <% if current_user.plan_id == 2 %>
+          <%= "<h4>Phone Number</h4>".html_safe %><%= @user.profile.phone_number %><br/>
+          <%= "<h4>Contact Email</h4>".html_safe %><%= @user.profile.contact_email %><br/>
+          <%= "<h4>Nickname</h4>".html_safe %><%= @user.profile.nick_name %><br/>
+          <%= "<h4>Preferred Progamming Language</h4>".html_safe %><%= @user.profile.preferred_prog_lang %><br/>
+        <% end %>
+      </div>
+      
+    </div>
+  </div>
 </div>
