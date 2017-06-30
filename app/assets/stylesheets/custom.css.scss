@@ -10,6 +10,10 @@
 
 //--------------Tags------------------------------------
 
+* {
+  font-size: 16px;
+}
+
 body {
   padding-top: 70px;
 }
@@ -145,6 +149,7 @@ body {
 }
 
 .well-2 {
+  background-color: #aabfe2;
   border: 1px solid black;
   box-shadow: 8px 8px 10px #8e9299;
 }
@@ -169,6 +174,17 @@ body {
 .well.well-pad {
   margin-bottom: 25px;
   padding: 25px;
+}
+
+.navbar-default.navbar-fixed-bottom.sm-foot {
+  Background-color: #aabfe2;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.f-font {
+  font-family: 'Oleo Script Swash Caps', cursive;
 }
 //--------------IDs------------------------------------
 
