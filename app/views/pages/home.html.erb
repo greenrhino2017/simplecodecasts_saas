@@ -1,10 +1,11 @@
-<div class="jumbotron text-center">
-  <h1>GreenRHINO</h1>
-  <h2>A Dev-Match Community</h2>
-  <h3>A membership site where entrepreneurs can meet developers.</h3>
-</div>
-
 <div class="row mainContent">
+  <div class="jumbotron text-center">
+    <h1>GreenRHINO</h1>
+    <h2>A Dev-Match Community</h2>
+    <h3>A membership site where entrepreneurs can meet developers.</h3>
+  </div>
+
+
   <% if user_signed_in? %>
     <div class="col-md-6">
       <div class="well wellMin">
@@ -57,6 +58,7 @@
       </div>
     </div>
   <% end %>
-</div>
 
-<%= render "devise/registrations/banner_main" %>
+
+  <%= render "devise/registrations/banner_main" %>
+</div>

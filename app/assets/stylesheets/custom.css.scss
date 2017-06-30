@@ -10,6 +10,9 @@
 
 //--------------Tags------------------------------------
 
+body {
+  padding-top: 70px;
+}
 
 //--------------Classes--------------------------------
 
@@ -131,6 +134,33 @@
 
 .col-md-3.text-center.img1 {
   box-shadow: 8px 8px 10px #8e9299;
+}
+
+.well-1 {
+  background-color: #E5FBCB;
+  border: 1px solid black;
+  box-shadow: 8px 8px 10px #8e9299;
+}
+
+.well-2 {
+  border: 1px solid black;
+  box-shadow: 8px 8px 10px #8e9299;
+}
+
+.well.white {
+  background-color: #fff;
+}
+
+.user-show-avatar {
+  height: 128px;
+  width: 128px;
+}
+
+.user-index-avatar {
+  border-radius: 50%;
+}
+
+.img1 {
   border-radius: 50%;
 }
 //--------------IDs------------------------------------

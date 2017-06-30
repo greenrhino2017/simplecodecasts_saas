@@ -1,7 +1,7 @@
 <div class="container mainContent">
   <div class="row">
     <div class="col-md-3 text-center img1">
-      <%= image_tag @user.profile.avatar.url %>
+      <%= image_tag @user.profile.avatar.url, class: 'user-show-avatar' %>
     </div>
     <div class="col-md-9">
       <h1 id="profileName"><%= @user.profile.first_name %> <%= @user.profile.last_name %><br/></h1>
